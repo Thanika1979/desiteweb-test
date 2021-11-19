@@ -1,0 +1,64 @@
+$font-family: 'Aleo', serif;
+$head-font:'Josefin Sans', sans-serif;
+
+.content{
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .box{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 5fr 4fr;
+        grid-template-areas: 
+        'box2'
+        'box3';
+        grid-gap: 30px;
+        padding: 40px 100px;
+        .box1{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin-top: 30%;
+            
+            h1{
+                font-family: $font-family;
+                color:rgba(255, 255, 255, 1);
+                font-size: 2rem;
+            }
+            span{
+                font-family: $head-font;
+                font-size: 1rem;
+                line-height: 2rem;
+                letter-spacing: 2%;
+                color:rgba(232, 232, 232, 1);
+            } 
+            
+            button{
+                font-family: $font-family;
+                font-size: 1rem;
+                color:rgba(232, 232, 232, 1) ;
+                background-color: blue;
+                letter-spacing: 1.2px;
+                text-align: center;
+                width: 12em;
+                height: 3em;
+                margin-top: 30%;                
+            }       
+        }
+        .box2{
+            grid-area: box2;
+            margin-top: 50%;
+            
+        }
+        .box3{
+           grid-area: box3;
+           margin: 1em;
+           margin-left: 5em;
+        }
+    }
+    
+}

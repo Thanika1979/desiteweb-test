@@ -1,0 +1,41 @@
+$font-family: 'Aleo', serif;
+$head-font:'Josefin Sans', sans-serif;
+
+.nav{
+    background:rgba(84, 116, 253, 1);
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px 20px;
+    
+    }
+    h1{
+        font-family: $head-font;
+        color: #FFF;
+        font-size: 2rem;
+        letter-spacing: 1.2rem;
+        margin-right: auto;
+    }
+    ul li{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            font-family: $font-family;
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+            line-height: 1rem;
+            margin: 2rem;
+            &:hover{
+                color: black;
+            }
+        }
+        
+    }
+}

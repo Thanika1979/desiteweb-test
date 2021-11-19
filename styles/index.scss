@@ -1,0 +1,19 @@
+@use 'header' ;
+@use 'navbar'; 
+@use 'content';
+@use 'reservation';
+@use 'footer';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+}
+
